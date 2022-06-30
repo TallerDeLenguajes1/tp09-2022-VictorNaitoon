@@ -5,12 +5,7 @@ public class Carpetas
 
     public Carpetas(string NombreDeCarpeta, int NumeroDeCarpeta)
     {   
-        if (NombreDeCarpeta == null)
-        {
-            Nombre = "";
-        } else {
-            Nombre = NombreDeCarpeta;
-        }
+        Nombre = NombreDeCarpeta;
         ID = NumeroDeCarpeta;
     }    
 }
@@ -22,17 +17,7 @@ public class Archivos{
     public Archivos(int NumeroDeArchivo, string NombreDelArchivo, string ExtensionDelArchivo)
     {
         ID = NumeroDeArchivo;
-        if (NombreDelArchivo == null)
-        {
-            Nombre = "";
-        } else {
-            Nombre = NombreDelArchivo;
-        }
-        if (ExtensionDelArchivo == null)
-        {
-            Extension = "";
-        } else {
-            Extension = ExtensionDelArchivo;
-        }
+        Nombre = NombreDelArchivo;
+        Extension = ExtensionDelArchivo;
     }
 }
